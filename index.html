@@ -80,18 +80,18 @@ section{padding:62px 0;position:relative}
 .kicker{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--sky);font-weight:700;margin-bottom:12px}
 
 /* ---------- hero ---------- */
-.hero{min-height:96vh;display:flex;flex-direction:column;justify-content:center;text-align:center;padding-top:18px}
-.poster{position:relative;width:min(97%,540px);margin:14px auto 4px;aspect-ratio:540/580;isolation:isolate}
-.poster .big14{position:absolute;inset-inline-start:-4%;bottom:-2%;z-index:1;
-  font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:min(62vw,320px);line-height:.78;letter-spacing:-.045em;
+.hero{min-height:94vh;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:6px 0 12px}
+.poster{position:relative;height:min(46vh,400px);aspect-ratio:560/470;width:auto;max-width:96%;margin:10px auto 2px;isolation:isolate}
+.poster .big14{position:absolute;inset-inline-start:0;bottom:3%;z-index:1;
+  font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:min(38vh,210px);line-height:.78;letter-spacing:-.045em;
   background:linear-gradient(180deg,#ffffff 0%,#cdddff 50%,#6f99ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
   filter:drop-shadow(0 16px 40px rgba(8,28,90,.55));animation:stampIn 1s var(--ease) both}
-.poster .fig{position:absolute;inset-inline-end:-4%;bottom:0;height:120%;width:auto;z-index:2;
-  -webkit-mask:radial-gradient(80% 84% at 55% 36%,#000 57%,transparent 92%);
-          mask:radial-gradient(80% 84% at 55% 36%,#000 57%,transparent 92%);
+.poster .fig{position:absolute;inset-inline-end:-2%;bottom:0;height:100%;width:auto;z-index:2;
+  -webkit-mask:radial-gradient(80% 86% at 54% 42%,#000 58%,transparent 92%);
+          mask:radial-gradient(80% 86% at 54% 42%,#000 58%,transparent 92%);
   filter:drop-shadow(0 22px 50px rgba(4,12,40,.5));animation:fadeUp 1s var(--ease) .18s both}
-.poster .glow{position:absolute;inset:4% 4% 8% 4%;z-index:0;
-  background:radial-gradient(closest-side,rgba(47,107,255,.42),transparent 72%);filter:blur(14px);animation:breathe 5s ease-in-out infinite}
+.poster .glow{position:absolute;inset:6% 6% 4% 6%;z-index:0;
+  background:radial-gradient(closest-side,rgba(47,107,255,.4),transparent 72%);filter:blur(14px);animation:breathe 5s ease-in-out infinite}
 .votepill{display:inline-flex;align-items:center;gap:9px;margin:6px 0 18px;padding:9px 20px;border-radius:999px;font-weight:800;
   color:var(--abyss);background:linear-gradient(135deg,var(--gold),var(--gold-deep));box-shadow:0 10px 30px rgba(255,206,77,.35);
   animation:fadeUp .7s var(--ease) .55s both}
