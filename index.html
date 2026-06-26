@@ -81,22 +81,17 @@ section{padding:62px 0;position:relative}
 
 /* ---------- hero ---------- */
 .hero{min-height:96vh;display:flex;flex-direction:column;justify-content:center;text-align:center;padding-top:18px}
-.avatar{width:clamp(154px,42vw,212px);height:clamp(154px,42vw,212px);border-radius:50%;overflow:hidden;margin:20px auto 8px;
-  border:3px solid rgba(255,255,255,.92);
-  box-shadow:0 0 0 7px rgba(47,107,255,.16),0 20px 54px rgba(4,12,40,.6),0 0 66px rgba(47,107,255,.32);
-  animation:fadeUp .8s var(--ease) .1s both}
-.avatar img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block}
-.numwrap{position:relative;display:inline-block;margin:18px auto 4px;isolation:isolate}
-.numwrap::before{content:"";position:absolute;inset:-30% -10%;z-index:-1;
-  background:radial-gradient(closest-side,rgba(47,107,255,.55),transparent 70%);filter:blur(8px);animation:breathe 4.5s ease-in-out infinite}
-.cone{position:absolute;top:-46%;left:50%;transform:translateX(-50%) rotate(8deg);width:60%;height:160%;z-index:-1;
-  background:linear-gradient(180deg,rgba(255,255,255,.18),transparent 72%);filter:blur(6px);clip-path:polygon(38% 0,62% 0,100% 100%,0 100%);animation:flicker 6s ease-in-out infinite}
-.num{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:clamp(150px,42vw,360px);line-height:.82;letter-spacing:-.04em;
-  background:linear-gradient(180deg,#ffffff 0%,#bcd2ff 55%,#5e8dff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
-  filter:drop-shadow(0 18px 40px rgba(8,28,90,.6));animation:stampIn 1s var(--ease) both}
-.numlabel{position:absolute;inset-block-end:14%;inset-inline-end:-6px;writing-mode:vertical-rl;font-family:"Space Grotesk";
-  font-size:13px;letter-spacing:5px;font-weight:600;color:var(--sky);opacity:0;animation:fade .8s ease .7s forwards}
-html[lang="ar"] .numlabel{writing-mode:initial;position:static;display:block;letter-spacing:3px;margin-top:-6px}
+.poster{position:relative;width:min(97%,540px);margin:14px auto 4px;aspect-ratio:540/580;isolation:isolate}
+.poster .big14{position:absolute;inset-inline-start:-4%;bottom:-2%;z-index:1;
+  font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:min(62vw,320px);line-height:.78;letter-spacing:-.045em;
+  background:linear-gradient(180deg,#ffffff 0%,#cdddff 50%,#6f99ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 16px 40px rgba(8,28,90,.55));animation:stampIn 1s var(--ease) both}
+.poster .fig{position:absolute;inset-inline-end:-4%;bottom:0;height:120%;width:auto;z-index:2;
+  -webkit-mask:radial-gradient(80% 84% at 55% 36%,#000 57%,transparent 92%);
+          mask:radial-gradient(80% 84% at 55% 36%,#000 57%,transparent 92%);
+  filter:drop-shadow(0 22px 50px rgba(4,12,40,.5));animation:fadeUp 1s var(--ease) .18s both}
+.poster .glow{position:absolute;inset:4% 4% 8% 4%;z-index:0;
+  background:radial-gradient(closest-side,rgba(47,107,255,.42),transparent 72%);filter:blur(14px);animation:breathe 5s ease-in-out infinite}
 .votepill{display:inline-flex;align-items:center;gap:9px;margin:6px 0 18px;padding:9px 20px;border-radius:999px;font-weight:800;
   color:var(--abyss);background:linear-gradient(135deg,var(--gold),var(--gold-deep));box-shadow:0 10px 30px rgba(255,206,77,.35);
   animation:fadeUp .7s var(--ease) .55s both}
@@ -226,22 +221,19 @@ html[lang="en"] [data-en]{display:revert}
       <span data-en>Legislative · July 2, 2026 · Zone <b>6</b></span>
     </span>
   </div>
-  <div class="avatar">
-    <img src="fawzi.jpg" alt="Dr Mohamed Fawzi Bendimerad" onerror="this.closest('.avatar').style.display='none'">
-  </div>
-  <div class="numwrap">
-    <span class="cone"></span>
-    <div class="num">14</div>
-    <div class="numlabel"><span data-ar>القائمة</span><span data-en>LIST</span></div>
-  </div>
-  <div>
-    <span class="votepill"><span class="x">✓</span><span data-ar>صوّت للقائمة 14</span><span data-en>Vote List 14</span></span>
-  </div>
   <h1><span data-ar>د. محمد فوزي بن ديمراد</span><span data-en>Dr Mohamed Fawzi Bendimerad</span></h1>
   <p class="role">
     <span data-ar>مختص في الطب الرياضي · طبيب سابق للمنتخب الوطني</span>
     <span data-en>Sports Medicine Physician · Former National Team Doctor</span>
   </p>
+  <div class="poster">
+    <div class="glow"></div>
+    <div class="big14">14</div>
+    <img class="fig" src="fawzi.jpg" alt="Dr Mohamed Fawzi Bendimerad" onerror="this.style.display='none'">
+  </div>
+  <div>
+    <span class="votepill"><span class="x">✓</span><span data-ar>صوّت للقائمة 14</span><span data-en>Vote List 14</span></span>
+  </div>
   <div class="herometa">
     <span class="chip"><span data-ar>الخليج · آسيا · أوقيانوسيا</span><span data-en>Gulf · Asia · Oceania</span></span>
     <span class="chip"><span data-ar>واجب المبادرة</span><span data-en>The Duty of Initiative</span></span>
