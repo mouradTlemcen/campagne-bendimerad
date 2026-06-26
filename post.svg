@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" font-family="'Segoe UI','Helvetica Neue',Tahoma,Arial,sans-serif">
+  <defs>
+    <radialGradient id="bg2" cx="85%" cy="0%" r="120%">
+      <stop offset="0%" stop-color="#1742b8"/>
+      <stop offset="45%" stop-color="#0c3aa0"/>
+      <stop offset="100%" stop-color="#06205c"/>
+    </radialGradient>
+    <clipPath id="ph2"><circle cx="800" cy="430" r="230"/></clipPath>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg2)"/>
+
+  <!-- left: number + name -->
+  <text x="70" y="300" fill="#ffffff" font-size="36" font-weight="800" letter-spacing="2">JIL JADID · جيل جديد</text>
+  <text x="60" y="560" fill="#ffffff" font-size="320" font-weight="900" letter-spacing="-12">14</text>
+  <text x="70" y="630" fill="#ffd24a" font-size="40" font-weight="800" letter-spacing="4">القائمة · LIST</text>
+
+  <text x="70" y="730" fill="#ffffff" font-size="52" font-weight="900">د. محمد فوزي بن ديمراد</text>
+  <text x="70" y="788" fill="#ffffff" font-size="40" font-weight="800">Dr Mohamed Fawzi Bendimerad</text>
+  <text x="70" y="838" fill="#cdd9ff" font-size="28">Former National Team Doctor · طبيب سابق للمنتخب</text>
+
+  <!-- photo right -->
+  <circle cx="800" cy="430" r="236" fill="none" stroke="#ffffff" stroke-width="8" opacity="0.9"/>
+  <circle cx="800" cy="430" r="230" fill="#0a2e80"/>
+  <image href="fawzi.jpg" x="570" y="200" width="460" height="460" clip-path="url(#ph2)" preserveAspectRatio="xMidYMid slice"/>
+  <text x="800" y="440" fill="#ffffff" font-size="26" text-anchor="middle" opacity="0.5">fawzi.jpg</text>
+
+  <!-- bottom bar -->
+  <rect x="70" y="905" width="940" height="92" rx="46" fill="#ffd24a"/>
+  <text x="540" y="965" fill="#06205c" font-size="40" font-weight="800" text-anchor="middle">2 جويلية 2026 · Zone 6 · Gulf/Asia/Oceania</text>
+  <text x="540" y="1045" fill="#ffffff" font-size="32" font-weight="700" text-anchor="middle">واجب المبادرة · The Duty of Initiative</text>
+</svg>

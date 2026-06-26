@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" font-family="'Segoe UI','Helvetica Neue',Tahoma,Arial,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="80%" cy="0%" r="120%">
+      <stop offset="0%" stop-color="#1742b8"/>
+      <stop offset="42%" stop-color="#0c3aa0"/>
+      <stop offset="100%" stop-color="#06205c"/>
+    </radialGradient>
+    <clipPath id="ph"><circle cx="540" cy="640" r="300"/></clipPath>
+  </defs>
+
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+
+  <!-- party -->
+  <text x="540" y="150" fill="#ffffff" font-size="40" font-weight="800" text-anchor="middle" letter-spacing="3">JIL JADID · جيل جديد</text>
+
+  <!-- photo placeholder -->
+  <circle cx="540" cy="640" r="306" fill="none" stroke="#ffffff" stroke-width="10" opacity="0.9"/>
+  <circle cx="540" cy="640" r="300" fill="#0a2e80"/>
+  <image href="fawzi.jpg" x="240" y="340" width="600" height="600" clip-path="url(#ph)" preserveAspectRatio="xMidYMid slice"/>
+  <text x="540" y="655" fill="#ffffff" font-size="34" text-anchor="middle" opacity="0.5">fawzi.jpg</text>
+
+  <!-- number -->
+  <text x="540" y="1130" fill="#ffffff" font-size="280" font-weight="900" text-anchor="middle" letter-spacing="-10">14</text>
+  <text x="540" y="1180" fill="#ffd24a" font-size="44" font-weight="800" text-anchor="middle" letter-spacing="6">القائمة · LIST</text>
+
+  <!-- name -->
+  <text x="540" y="1290" fill="#ffffff" font-size="64" font-weight="900" text-anchor="middle">د. محمد فوزي بن ديمراد</text>
+  <text x="540" y="1350" fill="#ffffff" font-size="46" font-weight="800" text-anchor="middle">Dr Mohamed Fawzi Bendimerad</text>
+  <text x="540" y="1410" fill="#cdd9ff" font-size="34" text-anchor="middle">Sports Medicine Physician — Former National Team Doctor</text>
+
+  <!-- date / zone pills -->
+  <rect x="240" y="1470" width="600" height="78" rx="39" fill="#ffd24a"/>
+  <text x="540" y="1522" fill="#06205c" font-size="40" font-weight="800" text-anchor="middle">2 جويلية 2026 · July 2, 2026</text>
+  <rect x="190" y="1568" width="700" height="72" rx="36" fill="rgba(255,255,255,0.10)" stroke="#ffffff" stroke-opacity="0.25"/>
+  <text x="540" y="1616" fill="#ffffff" font-size="34" font-weight="700" text-anchor="middle">المنطقة 6 — Zone 6 · Gulf / Asia / Oceania</text>
+
+  <!-- CTA -->
+  <text x="540" y="1730" fill="#ffffff" font-size="50" font-weight="900" text-anchor="middle">🗳️ صوتك يصنع الفارق — Vote List 14</text>
+
+  <!-- slogan -->
+  <text x="540" y="1840" fill="#ffd24a" font-size="44" font-weight="900" text-anchor="middle">واجب المبادرة · The Duty of Initiative</text>
+</svg>

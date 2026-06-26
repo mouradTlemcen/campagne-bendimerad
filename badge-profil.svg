@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" font-family="'Segoe UI','Helvetica Neue',Tahoma,Arial,sans-serif">
+  <!-- Photo de profil "Je vote 14". Place fawzi.jpg OU ta propre photo dessous. -->
+  <defs>
+    <clipPath id="circ"><circle cx="540" cy="540" r="540"/></clipPath>
+    <path id="arcTop" d="M 110 540 A 430 430 0 0 1 970 540" fill="none"/>
+    <path id="arcBot" d="M 130 540 A 410 410 0 0 0 950 540" fill="none"/>
+  </defs>
+
+  <!-- user photo fills the circle -->
+  <g clip-path="url(#circ)">
+    <rect width="1080" height="1080" fill="#0a2e80"/>
+    <image href="fawzi.jpg" x="0" y="0" width="1080" height="1080" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+
+  <!-- ring -->
+  <circle cx="540" cy="540" r="500" fill="none" stroke="#0c3aa0" stroke-width="80"/>
+  <circle cx="540" cy="540" r="500" fill="none" stroke="#ffd24a" stroke-width="80" stroke-dasharray="640 2500" stroke-dashoffset="-940"/>
+
+  <!-- curved text -->
+  <text fill="#ffffff" font-size="74" font-weight="900" letter-spacing="2">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">VOTE · 14 · صوّت</textPath>
+  </text>
+  <text fill="#06205c" font-size="40" font-weight="800">
+    <textPath href="#arcBot" startOffset="50%" text-anchor="middle">JIL JADID — ZONE 6 — 2 JUILLET 2026</textPath>
+  </text>
+</svg>
