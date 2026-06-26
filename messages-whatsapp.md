@@ -1,6 +1,6 @@
 # Messages WhatsApp / Telegram prêts à diffuser — Liste 14, Zone 6 (Golfe/Asie)
 
-> Lien de la page (déjà en ligne) : **https://mouradtlemcen.github.io/campagne-bendimerad/**
+> Lien de la page (déjà en ligne) : **https://bendimerad2026.web.app**
 > Diffuse dans : groupes communautaires algériens, associations, médecins, anciens élèves, clubs sportifs, mosquées, par ville (Riyad, Djeddah, Dubaï, Abou Dhabi, Doha, Koweït...).
 
 ---
@@ -11,13 +11,13 @@
 > 🗳️ تشريعيات 2 جويلية 2026 — الجالية الجزائرية، المنطقة 6 (الخليج، آسيا، أوقيانوسيا).
 > القائمة **14** — الدكتور **محمد فوزي بن ديمراد**، طبيب سابق للمنتخب الوطني.
 > 📍 مقعد واحد فقط والأصوات قليلة: صوتك في القنصلية يصنع الفارق.
-> 👈 كيف وأين تصوّت: https://mouradtlemcen.github.io/campagne-bendimerad/
+> 👈 كيف وأين تصوّت: https://bendimerad2026.web.app
 
 **🇬🇧 EN**
 > 🗳️ July 2, 2026 — Algerian community vote, Zone 6 (Gulf, Asia, Oceania).
 > **List 14** — Dr **Mohamed Fawzi Bendimerad**, former National Team doctor.
 > 📍 One seat, very few voters: your vote at the consulate decides it.
-> 👈 How &amp; where to vote: https://mouradtlemcen.github.io/campagne-bendimerad/
+> 👈 How &amp; where to vote: https://bendimerad2026.web.app
 
 ---
 
@@ -29,7 +29,7 @@
 > • أين: سفارة/قنصلية الجزائر ببلد إقامتك.
 > • ماذا تحضر: جواز السفر أو بطاقة التعريف أو البطاقة القنصلية.
 > • كيف: اختر القائمة **14**.
-> 👈 كل التفاصيل: https://mouradtlemcen.github.io/campagne-bendimerad/
+> 👈 كل التفاصيل: https://bendimerad2026.web.app
 
 **🇬🇧 EN**
 > ❓How to vote?
@@ -37,7 +37,7 @@
 > • Where: Algerian embassy/consulate in your country.
 > • Bring: passport, national ID, or consular card.
 > • How: choose **List 14**.
-> 👈 Full details: https://mouradtlemcen.github.io/campagne-bendimerad/
+> 👈 Full details: https://bendimerad2026.web.app
 
 ---
 
@@ -47,13 +47,13 @@
 > ⏰ اليوم نصوّت! لا تؤجّل.
 > توجّه إلى القنصلية وصوّت للقائمة **14** — د. بن ديمراد.
 > أحضر وثيقة هويتك. شارك هذه الرسالة مع كل جزائري تعرفه هنا 🇩🇿
-> https://mouradtlemcen.github.io/campagne-bendimerad/
+> https://bendimerad2026.web.app
 
 **🇬🇧 EN**
 > ⏰ Today we vote! Don't put it off.
 > Go to the consulate and vote **List 14** — Dr Bendimerad.
 > Bring your ID. Forward this to every Algerian you know here 🇩🇿
-> https://mouradtlemcen.github.io/campagne-bendimerad/
+> https://bendimerad2026.web.app
 
 ---
 
