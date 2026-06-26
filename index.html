@@ -4,232 +4,379 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>د. محمد فوزي بن ديمراد — القائمة 14 | Dr Bendimerad — List 14</title>
-<meta name="description" content="تشريعيات 2 جويلية 2026 — المنطقة 6 (الخليج، آسيا، أوقيانوسيا). القائمة 14 — جيل جديد.">
+<meta name="description" content="تشريعيات 2 جويلية 2026 — المنطقة 6 (الخليج، آسيا، أوقيانوسيا). القائمة 14 — جيل جديد. صوتك يصنع الفارق.">
+<meta name="theme-color" content="#04153f">
 <meta property="og:title" content="د. محمد فوزي بن ديمراد — القائمة 14">
 <meta property="og:description" content="تشريعيات 2 جويلية 2026 — المنطقة 6. صوتك يصنع الفارق.">
 <meta property="og:image" content="fawzi.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b2f9e'/%3E%3Ctext x='32' y='46' font-family='Arial' font-size='38' font-weight='900' fill='%23fff' text-anchor='middle'%3E14%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --blue-deep:#06205c;
-    --blue:#0c3aa0;
-    --blue-bright:#1a5cff;
-    --ink:#06205c;
-    --paper:#ffffff;
-    --muted:rgba(255,255,255,.78);
-    --line:rgba(255,255,255,.16);
-    --gold:#ffd24a;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:"Segoe UI","Helvetica Neue",system-ui,Tahoma,Arial,sans-serif;
-    color:#fff;
-    background:radial-gradient(120% 100% at 80% 0%,#1742b8 0%,var(--blue) 40%,var(--blue-deep) 100%);
-    min-height:100vh;
-    line-height:1.55;
-    overflow-x:hidden;
-  }
-  .wrap{max-width:560px;margin:0 auto;padding:0 20px 60px}
+:root{
+  --abyss:#04153f;
+  --abyss-2:#061d57;
+  --royal:#0b2f9e;
+  --electric:#2f6bff;
+  --sky:#8fb6ff;
+  --paper:#eef3ff;
+  --muted:#a9bce6;
+  --gold:#ffce4d;
+  --gold-deep:#f0a91e;
+  --line:rgba(143,182,255,.16);
+  --glass:rgba(143,182,255,.06);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html[lang="ar"]{font-family:"Tajawal",system-ui,sans-serif}
+html[lang="en"]{font-family:"Space Grotesk",system-ui,sans-serif}
+body{
+  background:var(--abyss);
+  color:var(--paper);
+  line-height:1.55;
+  overflow-x:hidden;
+  position:relative;
+  min-height:100vh;
+}
 
-  /* top bar */
-  .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 4px}
-  .brand{font-weight:800;letter-spacing:.5px;font-size:14px;opacity:.9}
-  .brand small{display:block;font-weight:600;opacity:.7;font-size:11px;letter-spacing:2px}
-  .langtoggle{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-size:13px}
-  .langtoggle button{background:transparent;color:#fff;border:0;padding:7px 14px;cursor:pointer;font-weight:700}
-  .langtoggle button.active{background:#fff;color:var(--blue-deep)}
+/* ---------- ambient background layers ---------- */
+.bg{position:fixed;inset:0;z-index:-3;overflow:hidden;
+  background:radial-gradient(130% 90% at 70% -10%,#123fbf 0%,var(--royal) 26%,var(--abyss-2) 58%,var(--abyss) 100%);}
+.bg .blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;mix-blend-mode:screen}
+.b1{width:60vw;height:60vw;left:-15vw;top:-10vw;background:radial-gradient(circle,#2f6bff,transparent 65%);animation:drift1 22s var(--ease) infinite}
+.b2{width:55vw;height:55vw;right:-20vw;top:20vh;background:radial-gradient(circle,#0a72ff,transparent 60%);animation:drift2 28s var(--ease) infinite}
+.b3{width:40vw;height:40vw;left:10vw;bottom:-15vh;background:radial-gradient(circle,#1640c8,transparent 60%);animation:drift1 25s var(--ease) infinite reverse}
+.grid{position:fixed;inset:0;z-index:-2;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:46px 46px;-webkit-mask-image:radial-gradient(120% 80% at 50% 0%,#000 35%,transparent 80%);mask-image:radial-gradient(120% 80% at 50% 0%,#000 35%,transparent 80%);opacity:.5}
+.spot{position:fixed;inset:0;z-index:-1;pointer-events:none;transition:background .35s ease;
+  background:radial-gradient(420px 420px at var(--mx,75%) var(--my,12%),rgba(143,182,255,.16),transparent 70%)}
+@keyframes drift1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(6vw,5vh) scale(1.12)}}
+@keyframes drift2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-7vw,4vh) scale(.9)}}
 
-  /* hero */
-  .hero{text-align:center;padding:18px 0 8px}
-  .photo{
-    width:170px;height:170px;border-radius:50%;object-fit:cover;
-    border:4px solid rgba(255,255,255,.9);
-    box-shadow:0 18px 50px rgba(0,0,0,.35);
-    background:rgba(255,255,255,.08);
-    margin:6px auto 18px;display:block;
-  }
-  .num{
-    font-size:96px;font-weight:900;line-height:.9;letter-spacing:-4px;
-    text-shadow:0 8px 30px rgba(0,0,0,.35);
-  }
-  .num span{display:block;font-size:13px;font-weight:700;letter-spacing:3px;opacity:.8;margin-top:6px}
-  h1{font-size:30px;font-weight:900;margin:14px 0 4px}
-  .role{color:var(--muted);font-size:15px;font-weight:600}
-  .meta{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-  .chip{border:1px solid var(--line);background:rgba(255,255,255,.06);border-radius:999px;padding:6px 13px;font-size:12.5px;font-weight:600}
-  .chip.gold{background:var(--gold);color:var(--blue-deep);border-color:transparent;font-weight:800}
+/* ---------- scroll progress ---------- */
+.progress{position:fixed;top:0;inset-inline-start:0;height:3px;width:0;z-index:60;
+  background:linear-gradient(90deg,var(--gold),var(--gold-deep));box-shadow:0 0 14px var(--gold)}
 
-  /* primary CTA */
-  .cta{
-    display:flex;align-items:center;justify-content:center;gap:10px;
-    background:#25D366;color:#062b14;text-decoration:none;font-weight:800;font-size:16px;
-    padding:16px;border-radius:16px;margin:22px 0 10px;
-    box-shadow:0 12px 30px rgba(37,211,102,.35);
-  }
-  .cta.secondary{background:#fff;color:var(--blue-deep);box-shadow:0 12px 30px rgba(0,0,0,.25)}
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+  padding:14px 18px;backdrop-filter:blur(10px);background:linear-gradient(to bottom,rgba(4,21,63,.7),transparent)}
+.mark{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:.5px}
+.mark .dot{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-family:"Space Grotesk";font-weight:700;font-size:15px;
+  background:linear-gradient(135deg,var(--electric),var(--royal));box-shadow:0 6px 18px rgba(47,107,255,.5)}
+.mark small{display:block;font-size:10px;letter-spacing:3px;color:var(--muted);font-weight:600}
+.langtoggle{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-size:13px;background:rgba(4,21,63,.4)}
+.langtoggle button{background:transparent;color:var(--paper);border:0;padding:7px 15px;cursor:pointer;font-weight:700;font-family:inherit;transition:.25s}
+.langtoggle button.active{background:var(--paper);color:var(--abyss)}
 
-  /* sections */
-  section{margin-top:30px}
-  .ttl{font-size:18px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:8px}
-  .ttl::before{content:"";width:6px;height:22px;background:var(--gold);border-radius:3px}
-  .card{background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:12px}
-  .card h3{font-size:15px;margin-bottom:4px}
-  .card p{font-size:13.5px;color:var(--muted)}
+/* ---------- layout ---------- */
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+section{padding:62px 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:2px;
+  text-transform:uppercase;color:var(--sky);border:1px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--glass)}
+.eyebrow b{color:var(--gold)}
+.kicker{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--sky);font-weight:700;margin-bottom:12px}
 
-  /* steps */
-  ol.steps{list-style:none;counter-reset:s}
-  ol.steps li{position:relative;padding-inline-start:46px;margin-bottom:16px;min-height:34px}
-  ol.steps li::before{
-    counter-increment:s;content:counter(s);
-    position:absolute;inset-inline-start:0;top:0;
-    width:32px;height:32px;border-radius:50%;background:var(--gold);color:var(--blue-deep);
-    font-weight:900;display:flex;align-items:center;justify-content:center;font-size:15px;
-  }
-  ol.steps b{display:block;font-size:14.5px}
-  ol.steps span{font-size:13px;color:var(--muted)}
-  .note{font-size:12px;color:var(--muted);border-inline-start:3px solid var(--gold);padding-inline-start:12px;margin-top:6px}
+/* ---------- hero ---------- */
+.hero{min-height:96vh;display:flex;flex-direction:column;justify-content:center;text-align:center;padding-top:18px}
+.numwrap{position:relative;display:inline-block;margin:18px auto 4px;isolation:isolate}
+.numwrap::before{content:"";position:absolute;inset:-30% -10%;z-index:-1;
+  background:radial-gradient(closest-side,rgba(47,107,255,.55),transparent 70%);filter:blur(8px);animation:breathe 4.5s ease-in-out infinite}
+.cone{position:absolute;top:-46%;left:50%;transform:translateX(-50%) rotate(8deg);width:60%;height:160%;z-index:-1;
+  background:linear-gradient(180deg,rgba(255,255,255,.18),transparent 72%);filter:blur(6px);clip-path:polygon(38% 0,62% 0,100% 100%,0 100%);animation:flicker 6s ease-in-out infinite}
+.num{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:clamp(150px,42vw,360px);line-height:.82;letter-spacing:-.04em;
+  background:linear-gradient(180deg,#ffffff 0%,#bcd2ff 55%,#5e8dff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 18px 40px rgba(8,28,90,.6));animation:stampIn 1s var(--ease) both}
+.numlabel{position:absolute;inset-block-end:14%;inset-inline-end:-6px;writing-mode:vertical-rl;font-family:"Space Grotesk";
+  font-size:13px;letter-spacing:5px;font-weight:600;color:var(--sky);opacity:0;animation:fade .8s ease .7s forwards}
+html[lang="ar"] .numlabel{writing-mode:initial;position:static;display:block;letter-spacing:3px;margin-top:-6px}
+.votepill{display:inline-flex;align-items:center;gap:9px;margin:6px 0 18px;padding:9px 20px;border-radius:999px;font-weight:800;
+  color:var(--abyss);background:linear-gradient(135deg,var(--gold),var(--gold-deep));box-shadow:0 10px 30px rgba(255,206,77,.35);
+  animation:fadeUp .7s var(--ease) .55s both}
+.votepill .x{display:grid;place-items:center;width:22px;height:22px;border-radius:6px;background:rgba(4,21,63,.18)}
+h1{font-size:clamp(28px,7vw,46px);font-weight:900;line-height:1.1;margin:4px 0;animation:fadeUp .7s var(--ease) .15s both}
+.role{color:var(--muted);font-size:clamp(14px,3.6vw,17px);font-weight:500;max-width:30ch;margin:8px auto 0;animation:fadeUp .7s var(--ease) .3s both}
+.herometa{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:22px;animation:fadeUp .7s var(--ease) .45s both}
+.chip{border:1px solid var(--line);background:var(--glass);border-radius:999px;padding:8px 15px;font-size:13px;font-weight:600;color:var(--paper)}
+.scrollcue{margin-top:34px;display:inline-flex;flex-direction:column;align-items:center;gap:6px;color:var(--muted);font-size:12px;
+  letter-spacing:2px;text-decoration:none;animation:fadeUp .7s var(--ease) .7s both}
+.scrollcue span{font-weight:700;text-transform:uppercase}
+.scrollcue::after{content:"";width:1px;height:30px;background:linear-gradient(var(--sky),transparent);animation:cue 1.8s ease-in-out infinite}
 
-  .missions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px}
-  .missions div{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:12.5px}
-  .missions b{font-weight:800}
+@keyframes stampIn{0%{opacity:0;transform:scale(1.28);filter:blur(16px) drop-shadow(0 18px 40px rgba(8,28,90,.6))}100%{opacity:1;transform:scale(1);filter:blur(0) drop-shadow(0 18px 40px rgba(8,28,90,.6))}}
+@keyframes breathe{0%,100%{opacity:.45;transform:scale(.96)}50%{opacity:.75;transform:scale(1.04)}}
+@keyframes flicker{0%,100%{opacity:.5}45%{opacity:.85}55%{opacity:.4}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes fade{to{opacity:1}}
+@keyframes cue{0%,100%{transform:translateY(-4px);opacity:.4}50%{transform:translateY(6px);opacity:1}}
 
-  footer{text-align:center;margin-top:40px;color:var(--muted);font-size:12px}
-  .slogan{font-size:16px;font-weight:800;color:#fff;margin-bottom:8px}
-  .share{display:flex;gap:10px;justify-content:center;margin-top:18px;flex-wrap:wrap}
-  .share a{flex:1;min-width:130px;text-align:center;border:1px solid var(--line);border-radius:12px;padding:12px;color:#fff;text-decoration:none;font-weight:700;font-size:13px;background:rgba(255,255,255,.05)}
+/* ---------- reveal on scroll ---------- */
+.js .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+.js .reveal.d1{transition-delay:.08s}.js .reveal.d2{transition-delay:.16s}.js .reveal.d3{transition-delay:.24s}
 
-  [data-en]{display:none}
-  html[lang="en"] [data-ar]{display:none}
-  html[lang="en"] [data-en]{display:revert}
+/* ---------- stakes / stats ---------- */
+.stakes{text-align:center}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.stat{border:1px solid var(--line);background:var(--glass);border-radius:20px;padding:26px 16px;position:relative;overflow:hidden}
+.stat .fig{font-family:"Space Grotesk";font-weight:700;font-size:clamp(44px,12vw,68px);line-height:1;
+  background:linear-gradient(180deg,#fff,var(--sky));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .lab{margin-top:8px;color:var(--muted);font-size:13.5px;font-weight:600}
+.stat::after{content:"";position:absolute;inset-block-start:0;inset-inline-start:0;width:100%;height:3px;background:linear-gradient(90deg,var(--electric),transparent)}
+.punch{margin-top:22px;font-size:clamp(19px,5vw,26px);font-weight:800;line-height:1.35}
+.punch b{color:var(--gold)}
+
+/* ---------- pillars ---------- */
+.ttl{font-size:clamp(22px,5.5vw,30px);font-weight:900;margin-bottom:6px}
+.sub{color:var(--muted);font-size:14.5px;margin-bottom:24px}
+.cards{display:grid;gap:14px}
+.card{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);background:var(--glass);border-radius:18px;
+  padding:18px;transition:transform .3s var(--ease),border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);border-color:rgba(143,182,255,.4);box-shadow:0 16px 40px rgba(4,12,40,.5)}
+.card .ico{flex:none;width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:22px;
+  background:linear-gradient(135deg,rgba(47,107,255,.25),rgba(11,47,158,.25));border:1px solid var(--line)}
+.card h3{font-size:16.5px;margin-bottom:3px}
+.card p{font-size:13.5px;color:var(--muted)}
+
+/* ---------- how to vote ---------- */
+.vote .ttl{display:flex;align-items:center;gap:10px}
+.steps{list-style:none;counter-reset:s;margin-top:8px}
+.steps li{position:relative;padding-inline-start:54px;padding-bottom:24px}
+.steps li:not(:last-child)::after{content:"";position:absolute;inset-inline-start:18px;top:38px;bottom:2px;width:2px;background:linear-gradient(var(--electric),var(--line))}
+.steps li .n{counter-increment:s;position:absolute;inset-inline-start:0;top:0;width:38px;height:38px;border-radius:50%;
+  display:grid;place-items:center;font-family:"Space Grotesk";font-weight:700;font-size:15px;color:var(--abyss);
+  background:linear-gradient(135deg,var(--gold),var(--gold-deep));box-shadow:0 6px 16px rgba(255,206,77,.3)}
+.steps li .n::before{content:counter(s)}
+.steps b{display:block;font-size:15.5px;margin-bottom:2px}
+.steps span{font-size:13.5px;color:var(--muted)}
+.note{font-size:12.5px;color:var(--muted);border-inline-start:3px solid var(--gold);padding-inline-start:13px;margin:6px 0 22px}
+.missions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mission{border:1px solid var(--line);background:var(--glass);border-radius:13px;padding:11px 13px;font-size:13px}
+.mission b{display:block;font-size:13.5px;margin-bottom:2px}
+.mission span{color:var(--muted);font-size:12px}
+
+/* ---------- share ---------- */
+.share{text-align:center}
+.btnrow{display:flex;flex-direction:column;gap:11px;max-width:380px;margin:22px auto 0}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:800;font-size:16px;
+  padding:16px;border-radius:15px;transition:transform .25s var(--ease),box-shadow .25s;color:#fff}
+.btn:hover{transform:translateY(-3px)}
+.btn.wa{background:#25D366;color:#062b14;box-shadow:0 12px 30px rgba(37,211,102,.35)}
+.btn.tg{background:#2aa3e0;box-shadow:0 12px 30px rgba(42,163,224,.3)}
+.btn.copy{background:var(--glass);border:1px solid var(--line);color:var(--paper)}
+
+/* ---------- footer ---------- */
+footer{text-align:center;padding:48px 20px 130px;border-top:1px solid var(--line);margin-top:30px}
+.slogan{font-size:clamp(20px,5vw,28px);font-weight:900;
+  background:linear-gradient(135deg,var(--gold),#fff);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:10px}
+footer .fine{color:var(--muted);font-size:12.5px}
+
+/* ---------- sticky mobile vote bar ---------- */
+.stickybar{position:fixed;inset-inline:0;bottom:0;z-index:55;padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+  display:flex;gap:10px;align-items:center;justify-content:space-between;transform:translateY(120%);transition:transform .4s var(--ease);
+  background:linear-gradient(to top,rgba(4,21,63,.95),rgba(4,21,63,.78));backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.stickybar.show{transform:none}
+.stickybar .lbl{font-size:13px;font-weight:700}
+.stickybar .lbl small{display:block;color:var(--muted);font-size:11px;font-weight:500}
+.stickybar a{flex:none;background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:var(--abyss);font-weight:800;
+  text-decoration:none;padding:12px 20px;border-radius:12px;font-size:14px}
+
+/* ---------- bilingual ---------- */
+[data-en]{display:none}
+html[lang="en"]{direction:ltr}
+html[lang="en"] [data-ar]{display:none}
+html[lang="en"] [data-en]{display:revert}
+
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+@media (min-width:560px){.stats{grid-template-columns:repeat(3,1fr)}.btnrow{flex-direction:row}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important}
+  .js .reveal{opacity:1;transform:none}
+  .num{filter:drop-shadow(0 18px 40px rgba(8,28,90,.6))}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="bg"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<div class="grid"></div>
+<div class="spot" id="spot"></div>
+<div class="progress" id="progress"></div>
 
-  <div class="topbar">
-    <div class="brand">جيل جديد<small>JIL JADID</small></div>
-    <div class="langtoggle">
-      <button id="btn-ar" class="active" onclick="setLang('ar')">عربي</button>
-      <button id="btn-en" onclick="setLang('en')">EN</button>
-    </div>
+<header class="topbar">
+  <div class="mark"><span class="dot">14</span><span>جيل جديد<small>JIL JADID</small></span></div>
+  <div class="langtoggle">
+    <button id="btn-ar" class="active" onclick="setLang('ar')">عربي</button>
+    <button id="btn-en" onclick="setLang('en')">EN</button>
   </div>
+</header>
 
-  <div class="hero">
-    <!-- ضع صورة المرشح هنا باسم fawzi.jpg / drop the candidate photo as fawzi.jpg -->
-    <img class="photo" src="fawzi.jpg" alt="Dr Mohamed Fawzi Bendimerad" onerror="this.style.display='none'">
-    <div class="num">14<span data-ar>القائمة رقم</span><span data-en>LIST NUMBER</span></div>
-    <h1><span data-ar>د. محمد فوزي بن ديمراد</span><span data-en>Dr Mohamed Fawzi Bendimerad</span></h1>
-    <div class="role">
-      <span data-ar>مختص في الطب الرياضي — طبيب سابق للمنتخب الوطني</span>
-      <span data-en>Sports Medicine Physician — Former National Team Doctor</span>
-    </div>
-    <div class="meta">
-      <span class="chip gold"><span data-ar>2 جويلية 2026</span><span data-en>July 2, 2026</span></span>
-      <span class="chip"><span data-ar>المنطقة 6 — الخليج، آسيا، أوقيانوسيا</span><span data-en>Zone 6 — Gulf, Asia, Oceania</span></span>
-    </div>
+<!-- HERO -->
+<section class="hero wrap">
+  <div>
+    <span class="eyebrow">
+      <span data-ar>تشريعيات · 2 جويلية 2026 · المنطقة <b>6</b></span>
+      <span data-en>Legislative · July 2, 2026 · Zone <b>6</b></span>
+    </span>
   </div>
+  <div class="numwrap">
+    <span class="cone"></span>
+    <div class="num">14</div>
+    <div class="numlabel"><span data-ar>القائمة</span><span data-en>LIST</span></div>
+  </div>
+  <div>
+    <span class="votepill"><span class="x">✓</span><span data-ar>صوّت للقائمة 14</span><span data-en>Vote List 14</span></span>
+  </div>
+  <h1><span data-ar>د. محمد فوزي بن ديمراد</span><span data-en>Dr Mohamed Fawzi Bendimerad</span></h1>
+  <p class="role">
+    <span data-ar>مختص في الطب الرياضي · طبيب سابق للمنتخب الوطني</span>
+    <span data-en>Sports Medicine Physician · Former National Team Doctor</span>
+  </p>
+  <div class="herometa">
+    <span class="chip"><span data-ar>الخليج · آسيا · أوقيانوسيا</span><span data-en>Gulf · Asia · Oceania</span></span>
+    <span class="chip"><span data-ar>واجب المبادرة</span><span data-en>The Duty of Initiative</span></span>
+  </div>
+  <a class="scrollcue" href="#vote"><span data-ar>كيف تصوّت</span><span data-en>How to vote</span></a>
+</section>
 
-  <a class="cta" id="shareTop" href="#vote">
-    <span data-ar>🗳️ كيف أصوّت؟</span><span data-en>🗳️ How do I vote?</span>
-  </a>
+<!-- STAKES -->
+<section class="stakes wrap">
+  <h2 class="ttl reveal"><span data-ar>لماذا صوتك حاسم</span><span data-en>Why your vote is decisive</span></h2>
+  <div class="stats">
+    <div class="stat reveal d1"><div class="fig" data-count="1">0</div><div class="lab"><span data-ar>مقعد واحد في المنطقة 6</span><span data-en>seat in Zone 6</span></div></div>
+    <div class="stat reveal d2"><div class="fig" data-count="5" data-suffix="%" data-prefix="&lt;">0</div><div class="lab"><span data-ar>نسبة التصويت في الخارج</span><span data-en>overseas turnout</span></div></div>
+    <div class="stat reveal d3"><div class="fig" data-count="20" data-prefix="×">0</div><div class="lab"><span data-ar>وزن صوتك مقارنة بالوطن</span><span data-en>the weight of your vote</span></div></div>
+  </div>
+  <p class="punch reveal">
+    <span data-ar>مقعد واحد، وأصوات قليلة جدًا. <b>صوتك في القنصلية قد يحسم النتيجة.</b></span>
+    <span data-en>One seat, very few voters. <b>Your vote at the consulate can decide the result.</b></span>
+  </p>
+</section>
 
-  <!-- WHY -->
-  <section>
-    <div class="ttl"><span data-ar>لماذا صوتك مهم</span><span data-en>Why your vote matters</span></div>
-    <div class="card">
-      <h3><span data-ar>مقعد واحد. أصوات قليلة.</span><span data-en>One seat. Very few voters.</span></h3>
-      <p>
-        <span data-ar>المنطقة 6 لها مقعد واحد فقط، ونسبة المشاركة في الخارج ضعيفة جدًا. كل صوت في القنصلية يُحدث فارقًا حقيقيًا — صوتك هنا يساوي أضعافه في الوطن.</span>
-        <span data-en>Zone 6 has only one seat, and overseas turnout is very low. Every vote at the consulate truly counts — your vote here is worth several back home.</span>
-      </p>
-    </div>
-  </section>
+<!-- PILLARS -->
+<section class="wrap">
+  <h2 class="ttl reveal"><span data-ar>لماذا هو</span><span data-en>Why him</span></h2>
+  <p class="sub reveal"><span data-ar>رجل ميدان، لا وعود جديدة.</span><span data-en>A man of the field — not new promises.</span></p>
+  <div class="cards">
+    <div class="card reveal d1"><div class="ico">🩺</div><div>
+      <h3><span data-ar>ثقة مثبتة</span><span data-en>Proven trust</span></h3>
+      <p><span data-ar>طبيب معروف خدم المنتخب الوطني سنوات. خبرة وسمعة، لا اسم مجهول على ورقة.</span>
+         <span data-en>A respected doctor who served the National Team for years. Experience and reputation — not an unknown name on a ballot.</span></p></div></div>
+    <div class="card reveal d2"><div class="ico">🌍</div><div>
+      <h3><span data-ar>جالية مسموعة</span><span data-en>A diaspora that's heard</span></h3>
+      <p><span data-ar>تمثيل فعلي للجزائريين في الخليج وآسيا: الخدمات القنصلية، الاستثمار، وحماية الحقوق.</span>
+         <span data-en>Real representation for Algerians in the Gulf and Asia: consular services, investment, and protecting rights.</span></p></div></div>
+    <div class="card reveal d3"><div class="ico">⚡</div><div>
+      <h3><span data-ar>واجب المبادرة</span><span data-en>The duty of initiative</span></h3>
+      <p><span data-ar>أفعال قبل الوعود — نبدأ بما يمكن إنجازه الآن للجالية، لا بقوائم انتظار.</span>
+         <span data-en>Action before promises — start with what can be done now for the community, not waiting lists.</span></p></div></div>
+  </div>
+</section>
 
-  <!-- PROGRAM -->
-  <section>
-    <div class="ttl"><span data-ar>من أجل ماذا</span><span data-en>What he stands for</span></div>
-    <div class="card"><h3>🌐 <span data-ar>جالية مسموعة</span><span data-en>A voice for the diaspora</span></h3>
-      <p><span data-ar>تمثيل فعلي لمصالح الجزائريين في الخليج وآسيا: الخدمات القنصلية، الاستثمار، وحماية الحقوق.</span>
-         <span data-en>Real representation for Algerians in the Gulf and Asia: consular services, investment, and protecting rights.</span></p></div>
-    <div class="card"><h3>💼 <span data-ar>اقتصاد ورقمنة</span><span data-en>Economy &amp; digital</span></h3>
-      <p><span data-ar>تشجيع الكفاءات والاستثمار، رقمنة الإدارة، وتسهيل ربط الجالية باقتصاد الوطن.</span>
-         <span data-en>Backing talent and investment, digital administration, and connecting the diaspora to the national economy.</span></p></div>
-    <div class="card"><h3>🩺 <span data-ar>خبرة ميدانية</span><span data-en>Proven experience</span></h3>
-      <p><span data-ar>طبيب معروف خدم المنتخب الوطني — رجل ميدان لا وعود، و«واجب المبادرة» شعاره.</span>
-         <span data-en>A well-known physician who served the National Team — a man of the field, not promises. "The Duty of Initiative."</span></p></div>
-  </section>
+<!-- HOW TO VOTE -->
+<section class="vote wrap" id="vote">
+  <h2 class="ttl reveal">🗳️ <span data-ar>كيف تصوّت — خطوة بخطوة</span><span data-en>How to vote — step by step</span></h2>
+  <ol class="steps">
+    <li class="reveal"><span class="n"></span>
+      <b><span data-ar>متى؟</span><span data-en>When?</span></b>
+      <span data-ar>التصويت في الخارج يمتد على عدة أيام وينتهي يوم 2 جويلية 2026. تحقّق من أيام وساعات قنصليتك.</span>
+      <span data-en>Voting abroad runs over several days and ends on July 2, 2026. Check your consulate's exact days &amp; hours.</span></li>
+    <li class="reveal"><span class="n"></span>
+      <b><span data-ar>أين؟</span><span data-en>Where?</span></b>
+      <span data-ar>في سفارة أو قنصلية الجزائر ببلد إقامتك (مكتب التصويت القنصلي).</span>
+      <span data-en>At the Algerian embassy or consulate in your country of residence.</span></li>
+    <li class="reveal"><span class="n"></span>
+      <b><span data-ar>ماذا تُحضر؟</span><span data-en>What to bring?</span></b>
+      <span data-ar>وثيقة هوية جزائرية سارية: جواز السفر أو بطاقة التعريف الوطنية أو البطاقة القنصلية. ويجب أن تكون مسجّلاً في القائمة الانتخابية القنصلية.</span>
+      <span data-en>A valid Algerian ID: passport, national ID, or consular card. You must be registered on the consular electoral list.</span></li>
+    <li class="reveal"><span class="n"></span>
+      <b><span data-ar>كيف تصوّت للقائمة 14؟</span><span data-en>How to vote List 14?</span></b>
+      <span data-ar>اختر القائمة رقم 14. النظام بقائمة مفتوحة: لا تتجاوز عدد المقاعد (مقعد واحد) وإلا يُلغى صوتك. ورقة دون اختيار فردي تبقى صحيحة لصالح القائمة.</span>
+      <span data-en>Choose List 14. Open-list system: don't select more than the number of seats (one) or your ballot is voided. A ballot with no individual mark still counts for the list.</span></li>
+  </ol>
+  <p class="note reveal">
+    <span data-ar>⚠️ الأيام والساعات تختلف حسب القنصلية — تواصل مع سفارتك لتأكيد البرنامج الدقيق.</span>
+    <span data-en>⚠️ Days &amp; hours vary by consulate — contact your embassy to confirm the exact schedule.</span></p>
+  <div class="missions">
+    <div class="mission reveal"><b>🇸🇦 <span data-ar>السعودية</span><span data-en>Saudi Arabia</span></b><span data-ar>سفارة الرياض · قنصلية جدة</span><span data-en>Embassy Riyadh · Consulate Jeddah</span></div>
+    <div class="mission reveal"><b>🇦🇪 <span data-ar>الإمارات</span><span data-en>UAE</span></b><span data-ar>سفارة أبوظبي · دبي</span><span data-en>Embassy Abu Dhabi · Dubai</span></div>
+    <div class="mission reveal"><b>🇶🇦 <span data-ar>قطر</span><span data-en>Qatar</span></b><span data-ar>سفارة الدوحة</span><span data-en>Embassy Doha</span></div>
+    <div class="mission reveal"><b>🇰🇼 <span data-ar>الكويت</span><span data-en>Kuwait</span></b><span data-ar>سفارة الكويت</span><span data-en>Embassy Kuwait City</span></div>
+    <div class="mission reveal"><b>🇧🇭 <span data-ar>البحرين</span><span data-en>Bahrain</span></b><span data-ar>راجع سفارتك المعتمدة</span><span data-en>Check your accredited mission</span></div>
+    <div class="mission reveal"><b>🇴🇲 <span data-ar>عُمان</span><span data-en>Oman</span></b><span data-ar>راجع سفارتك المعتمدة</span><span data-en>Check your accredited mission</span></div>
+  </div>
+</section>
 
-  <!-- HOW TO VOTE -->
-  <section id="vote">
-    <div class="ttl"><span data-ar>كيف تصوّت — خطوة بخطوة</span><span data-en>How to vote — step by step</span></div>
-    <ol class="steps">
-      <li>
-        <b><span data-ar>متى؟</span><span data-en>When?</span></b>
-        <span data-ar>التصويت في الخارج يمتد على عدة أيام وينتهي يوم 2 جويلية 2026. تحقّق من أيام وساعات قنصليتك.</span>
-        <span data-en>Voting abroad runs over several days and ends on July 2, 2026. Check your consulate's exact days &amp; hours.</span>
-      </li>
-      <li>
-        <b><span data-ar>أين؟</span><span data-en>Where?</span></b>
-        <span data-ar>في سفارة أو قنصلية الجزائر ببلد إقامتك (مكتب التصويت القنصلي).</span>
-        <span data-en>At the Algerian embassy or consulate in your country of residence (consular polling station).</span>
-      </li>
-      <li>
-        <b><span data-ar>ماذا تُحضر؟</span><span data-en>What to bring?</span></b>
-        <span data-ar>وثيقة هوية جزائرية سارية: جواز السفر أو بطاقة التعريف الوطنية أو البطاقة القنصلية. ويجب أن تكون مسجّلاً في القائمة الانتخابية القنصلية.</span>
-        <span data-en>A valid Algerian ID: passport, national ID card, or consular card. You must be registered on the consular electoral list.</span>
-      </li>
-      <li>
-        <b><span data-ar>كيف تصوّت للقائمة 14؟</span><span data-en>How to vote List 14?</span></b>
-        <span data-ar>اختر القائمة رقم 14. النظام بقائمة مفتوحة: لا تتجاوز عدد المقاعد (مقعد واحد) وإلا يُلغى صوتك. ورقة دون اختيار فردي تبقى صحيحة لصالح القائمة.</span>
-        <span data-en>Choose List 14. Open-list system: do not select more than the number of seats (one) or your ballot is voided. A ballot with no individual mark still counts for the list.</span>
-      </li>
-    </ol>
-    <p class="note">
-      <span data-ar>⚠️ الأيام والساعات تختلف حسب القنصلية. تواصل مع سفارتك/قنصليتك لتأكيد البرنامج الدقيق.</span>
-      <span data-en>⚠️ Days &amp; hours vary by consulate. Contact your embassy/consulate to confirm the exact schedule.</span>
-    </p>
+<!-- SHARE -->
+<section class="share wrap">
+  <h2 class="ttl reveal"><span data-ar>انشر الرسالة</span><span data-en>Spread the word</span></h2>
+  <p class="sub reveal"><span data-ar>مشاركة واحدة قد تجلب صوتًا. أرسلها لكل جزائري تعرفه هنا.</span><span data-en>One share can bring one vote. Send it to every Algerian you know here.</span></p>
+  <div class="btnrow reveal">
+    <a class="btn wa" id="waShare" href="#">📲 <span data-ar>واتساب</span><span data-en>WhatsApp</span></a>
+    <a class="btn tg" id="tgShare" href="#">✈️ Telegram</a>
+    <a class="btn copy" id="copyLink" href="#" onclick="copyLink(event)">🔗 <span data-ar>نسخ الرابط</span><span data-en>Copy link</span></a>
+  </div>
+</section>
 
-    <div class="missions">
-      <div><b>🇸🇦 <span data-ar>السعودية</span><span data-en>Saudi Arabia</span></b><br><span data-ar>سفارة الرياض / قنصلية جدة</span><span data-en>Embassy Riyadh / Consulate Jeddah</span></div>
-      <div><b>🇦🇪 <span data-ar>الإمارات</span><span data-en>UAE</span></b><br><span data-ar>سفارة أبوظبي / دبي</span><span data-en>Embassy Abu Dhabi / Dubai</span></div>
-      <div><b>🇶🇦 <span data-ar>قطر</span><span data-en>Qatar</span></b><br><span data-ar>سفارة الدوحة</span><span data-en>Embassy Doha</span></div>
-      <div><b>🇰🇼 <span data-ar>الكويت</span><span data-en>Kuwait</span></b><br><span data-ar>سفارة الكويت</span><span data-en>Embassy Kuwait City</span></div>
-      <div><b>🇧🇭 <span data-ar>البحرين</span><span data-en>Bahrain</span></b><br><span data-ar>راجع سفارتك المعتمدة</span><span data-en>Check your accredited mission</span></div>
-      <div><b>🇴🇲 <span data-ar>عُمان</span><span data-en>Oman</span></b><br><span data-ar>راجع سفارتك المعتمدة</span><span data-en>Check your accredited mission</span></div>
-    </div>
-  </section>
+<footer>
+  <div class="slogan"><span data-ar>واجب المبادرة</span><span data-en>The Duty of Initiative</span></div>
+  <div class="fine"><span data-ar>جيل جديد · القائمة 14 · المنطقة 6 · 2 جويلية 2026</span><span data-en>Jil Jadid · List 14 · Zone 6 · July 2, 2026</span></div>
+</footer>
 
-  <!-- SHARE -->
-  <section>
-    <div class="ttl"><span data-ar>انشر الرابط</span><span data-en>Spread the word</span></div>
-    <div class="share">
-      <a id="waShare" href="#">📲 <span data-ar>واتساب</span><span data-en>WhatsApp</span></a>
-      <a id="tgShare" href="#">✈️ Telegram</a>
-      <a id="copyLink" href="#" onclick="copyLink(event)">🔗 <span data-ar>نسخ الرابط</span><span data-en>Copy link</span></a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="slogan"><span data-ar>واجب المبادرة</span><span data-en>The Duty of Initiative</span></div>
-    <div data-ar>جيل جديد — القائمة 14 — المنطقة 6 — 2 جويلية 2026</div>
-    <div data-en>Jil Jadid — List 14 — Zone 6 — July 2, 2026</div>
-  </footer>
-
+<div class="stickybar" id="stickybar">
+  <div class="lbl"><span data-ar>القائمة 14 — د. بن ديمراد</span><span data-en>List 14 — Dr Bendimerad</span>
+    <small><span data-ar>2 جويلية · صوتك يصنع الفارق</span><span data-en>July 2 · your vote matters</span></small></div>
+  <a href="#vote"><span data-ar>كيف أصوّت</span><span data-en>How to vote</span></a>
 </div>
 
 <script>
+  document.documentElement.classList.add('js');
+
   function setLang(l){
-    document.documentElement.lang=l;
-    document.documentElement.dir = l==='ar' ? 'rtl' : 'ltr';
+    var h=document.documentElement;
+    h.lang=l; h.dir = l==='ar' ? 'rtl' : 'ltr';
     document.getElementById('btn-ar').classList.toggle('active', l==='ar');
     document.getElementById('btn-en').classList.toggle('active', l==='en');
   }
-  // share links (auto-fill with the page URL once hosted)
+
+  /* share links — auto-uses whatever domain serves the page */
   var url = location.href.split('#')[0];
-  var msgAr = "🗳️ يوم 2 جويلية 2026 — انتخابات تشريعية، الجالية الجزائرية (المنطقة 6). صوّت للقائمة 14 — د. محمد فوزي بن ديمراد. كيف تصوّت 👇 ";
-  document.getElementById('waShare').href = "https://wa.me/?text=" + encodeURIComponent(msgAr + url);
-  document.getElementById('tgShare').href = "https://t.me/share/url?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(msgAr);
-  function copyLink(e){e.preventDefault(); navigator.clipboard && navigator.clipboard.writeText(url); e.target.textContent="✓";}
+  var msg = "🗳️ 2 جويلية 2026 — تشريعيات الجالية، المنطقة 6. صوّت للقائمة 14 — د. محمد فوزي بن ديمراد. كيف تصوّت 👇 ";
+  document.getElementById('waShare').href = "https://wa.me/?text=" + encodeURIComponent(msg + url);
+  document.getElementById('tgShare').href = "https://t.me/share/url?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(msg);
+  function copyLink(e){e.preventDefault(); if(navigator.clipboard) navigator.clipboard.writeText(url);
+    var t=e.currentTarget; t.style.opacity=.6; setTimeout(function(){t.style.opacity=1;},600);}
+
+  /* scroll reveal */
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){
+    if(en.isIntersecting){en.target.classList.add('in'); io.unobserve(en.target);}});},{threshold:.18});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+  /* animated counters */
+  function runCount(el){
+    var end=parseFloat(el.dataset.count), pre=el.dataset.prefix||"", suf=el.dataset.suffix||"", t0=null, dur=1100;
+    function step(ts){ if(!t0)t0=ts; var p=Math.min((ts-t0)/dur,1); var e=1-Math.pow(1-p,3);
+      el.innerHTML=pre+Math.round(end*e)+suf; if(p<1)requestAnimationFrame(step);} requestAnimationFrame(step);
+  }
+  var cio=new IntersectionObserver(function(es){es.forEach(function(en){
+    if(en.isIntersecting){runCount(en.target); cio.unobserve(en.target);}});},{threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(function(el){cio.observe(el);});
+
+  /* scroll progress + sticky bar + pointer spotlight */
+  var prog=document.getElementById('progress'), bar=document.getElementById('stickybar'), spot=document.getElementById('spot');
+  function onScroll(){
+    var h=document.documentElement, sc=h.scrollTop, max=h.scrollHeight-h.clientHeight;
+    prog.style.width=(max>0?sc/max*100:0)+'%';
+    bar.classList.toggle('show', sc>h.clientHeight*.85);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  if(matchMedia('(pointer:fine)').matches){
+    window.addEventListener('mousemove',function(e){
+      spot.style.background='radial-gradient(440px 440px at '+e.clientX+'px '+e.clientY+'px,rgba(143,182,255,.16),transparent 70%)';
+    });
+  }
 </script>
 </body>
 </html>
